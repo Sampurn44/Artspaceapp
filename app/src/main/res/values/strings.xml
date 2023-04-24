@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Art Space App</string>
+    <string name="Mona">Mona Lisa</string>
+    <string name="Thekiss">The Kiss</string>
+    <string name="StarryNight">The Starry Night</string>
+    <string name="Fog">Girl with a Pearl Earring</string>
+    <string name="lavelata">La velata</string>
+    <string name="last">The Milkmaid</string>
+
+    <string name="vinci">Leonardo da Vinci </string>
+    <string name="kiss">Gustav Klimt, 1908</string>
+    <string name="starry"> Vincent van Gogh, 1889</string>
+    <string name="foggy">Johannes Vermeer, 1665</string>
+    <string name="lave">ARaphael, 1515</string>
+    <string name="supper">Johannes Vermeer, 1658</string>
+</resources>
