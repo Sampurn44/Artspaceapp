@@ -52,7 +52,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
+fun ArtSpace(){}
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
