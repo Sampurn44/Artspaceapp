@@ -52,7 +52,11 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-fun ArtSpace(){}
+fun ArtSpace(){
+    var result by remember {
+        mutableStateOf(1)
+    }
+}
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
