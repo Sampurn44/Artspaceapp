@@ -56,7 +56,14 @@ fun ArtSpace(){
     var result by remember {
         mutableStateOf(1)
     }
-}
+    when (result) {
+        1 -> ArtLayout(
+            imageResource = R.drawable.mona_lisa_c_1503_1519, textResource = (stringResource(
+                id = R.string.Mona
+            )), titleResource = (stringResource(id = R.string.vinci)), modifier = Modifier
+        )
+    }
+    }
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
