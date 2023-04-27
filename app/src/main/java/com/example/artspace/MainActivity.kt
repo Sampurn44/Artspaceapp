@@ -53,7 +53,8 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-
+@Composable
+fun ArtLayout(imageResource: Int,  textResource: String, titleResource: String,modifier: Modifier){}
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun GreetingPreview() {
