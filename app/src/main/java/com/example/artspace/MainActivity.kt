@@ -71,6 +71,9 @@ fun ArtSpace(){
         4-> ArtLayout(imageResource = R.drawable.la_velada__por_rafael, textResource = (stringResource(
             id = R.string.lavelata
         )) , titleResource = (stringResource(id = R.string.lave)), modifier =Modifier )
+        5-> ArtLayout(imageResource = R.drawable.tryhi, textResource = (stringResource(
+            id = R.string.Fog
+        )) , titleResource = (stringResource(id = R.string.foggy)), modifier =Modifier )
     }
     }
 
