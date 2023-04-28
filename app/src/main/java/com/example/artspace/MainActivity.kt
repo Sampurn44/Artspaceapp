@@ -74,6 +74,9 @@ fun ArtSpace(){
         5-> ArtLayout(imageResource = R.drawable.tryhi, textResource = (stringResource(
             id = R.string.Fog
         )) , titleResource = (stringResource(id = R.string.foggy)), modifier =Modifier )
+        6-> ArtLayout(imageResource = R.drawable.supperexchange, textResource = (stringResource(
+            id = R.string.last
+        )) , titleResource = (stringResource(id = R.string.supper)), modifier =Modifier )
     }
     }
 
