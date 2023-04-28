@@ -65,6 +65,9 @@ fun ArtSpace(){
         2-> ArtLayout(imageResource = R.drawable.thekiss, textResource = (stringResource(
             id = R.string.Thekiss
         )) , titleResource = (stringResource(id = R.string.kiss)), modifier =Modifier )
+        3-> ArtLayout(imageResource = R.drawable.thestarry, textResource = (stringResource(
+            id = R.string.StarryNight
+        )) , titleResource = (stringResource(id = R.string.starry)), modifier =Modifier )
     }
     }
 
