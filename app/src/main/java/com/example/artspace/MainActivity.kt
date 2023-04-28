@@ -62,21 +62,40 @@ fun ArtSpace(){
                 id = R.string.Mona
             )), titleResource = (stringResource(id = R.string.vinci)), modifier = Modifier
         )
-        2-> ArtLayout(imageResource = R.drawable.thekiss, textResource = (stringResource(
-            id = R.string.Thekiss
-        )) , titleResource = (stringResource(id = R.string.kiss)), modifier =Modifier )
-        3-> ArtLayout(imageResource = R.drawable.thestarry, textResource = (stringResource(
-            id = R.string.StarryNight
-        )) , titleResource = (stringResource(id = R.string.starry)), modifier =Modifier )
-        4-> ArtLayout(imageResource = R.drawable.la_velada__por_rafael, textResource = (stringResource(
-            id = R.string.lavelata
-        )) , titleResource = (stringResource(id = R.string.lave)), modifier =Modifier )
-        5-> ArtLayout(imageResource = R.drawable.tryhi, textResource = (stringResource(
-            id = R.string.Fog
-        )) , titleResource = (stringResource(id = R.string.foggy)), modifier =Modifier )
-        6-> ArtLayout(imageResource = R.drawable.supperexchange, textResource = (stringResource(
-            id = R.string.last
-        )) , titleResource = (stringResource(id = R.string.supper)), modifier =Modifier )
+
+        2 -> ArtLayout(
+            imageResource = R.drawable.thekiss, textResource = (stringResource(
+                id = R.string.Thekiss
+            )), titleResource = (stringResource(id = R.string.kiss)), modifier = Modifier
+        )
+
+        3 -> ArtLayout(
+            imageResource = R.drawable.thestarry, textResource = (stringResource(
+                id = R.string.StarryNight
+            )), titleResource = (stringResource(id = R.string.starry)), modifier = Modifier
+        )
+
+        4 -> ArtLayout(
+            imageResource = R.drawable.la_velada__por_rafael, textResource = (stringResource(
+                id = R.string.lavelata
+            )), titleResource = (stringResource(id = R.string.lave)), modifier = Modifier
+        )
+
+        5 -> ArtLayout(
+            imageResource = R.drawable.tryhi, textResource = (stringResource(
+                id = R.string.Fog
+            )), titleResource = (stringResource(id = R.string.foggy)), modifier = Modifier
+        )
+
+        6 -> ArtLayout(
+            imageResource = R.drawable.supperexchange, textResource = (stringResource(
+                id = R.string.last
+            )), titleResource = (stringResource(id = R.string.supper)), modifier = Modifier
+        )
+    }
+    Row(horizontalArrangement = Arrangement.spacedBy(0.dp,alignment = Alignment.CenterHorizontally),
+        verticalAlignment = Alignment.Bottom,
+        modifier = Modifier.padding(bottom = 30.dp)){}
     }
     }
 
