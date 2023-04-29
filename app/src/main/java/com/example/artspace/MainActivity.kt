@@ -67,7 +67,23 @@ fun ArtLayout(imageResource: Int,  textResource: String, titleResource: String,m
             .padding(20.dp))
         Card(modifier = Modifier.padding(horizontal = 20.dp, vertical = 100.dp)){
             Column(modifier = Modifier.padding(30.dp))
-            {}
+            Text(
+                text = titleResource,
+                fontSize = 32.sp,
+                fontWeight = FontWeight.Medium,
+            )
+            Text(
+                text = textResource,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Bold
+            )
+        }
+    }
+
+}
+}
+
+{}
 }
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
