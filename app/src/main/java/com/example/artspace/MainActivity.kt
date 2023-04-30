@@ -58,14 +58,18 @@ fun ArtLayout(imageResource: Int,  textResource: String, titleResource: String,m
     Column(
         verticalArrangement = Arrangement.Center ,
         horizontalAlignment = Alignment.CenterHorizontally  ) {
-        Image(painter = painterResource(id = imageResource), contentDescription=  null, modifier = Modifier
-            .padding(20.dp)
-            .border(border = BorderStroke(2.dp, Color.Gray), shape = RectangleShape)
-            .height(350.dp)
-            .width(300.dp)
-            .shadow(elevation = 4.dp, shape = RectangleShape)
-            .padding(20.dp))
-        Card(modifier = Modifier.padding(horizontal = 20.dp, vertical = 100.dp)){
+        Image(
+            painter = painterResource(id = imageResource),
+            contentDescription = null,
+            modifier = Modifier
+                .padding(20.dp)
+                .border(border = BorderStroke(2.dp, Color.Gray), shape = RectangleShape)
+                .height(350.dp)
+                .width(300.dp)
+                .shadow(elevation = 4.dp, shape = RectangleShape)
+                .padding(20.dp)
+        )
+        Card(modifier = Modifier.padding(horizontal = 20.dp, vertical = 100.dp)) {
             Column(modifier = Modifier.padding(30.dp))
             Text(
                 text = titleResource,
@@ -78,7 +82,7 @@ fun ArtLayout(imageResource: Int,  textResource: String, titleResource: String,m
                 fontWeight = FontWeight.Bold
             )
         }
-
+    }
 {}
 }
 @Preview(showBackground = true, showSystemUi = true)
