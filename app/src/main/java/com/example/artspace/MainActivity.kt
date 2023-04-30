@@ -78,10 +78,6 @@ fun ArtLayout(imageResource: Int,  textResource: String, titleResource: String,m
                 fontWeight = FontWeight.Bold
             )
         }
-    }
-
-}
-}
 
 {}
 }
