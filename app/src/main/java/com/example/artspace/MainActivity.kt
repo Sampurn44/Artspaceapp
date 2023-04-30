@@ -95,7 +95,12 @@ fun ArtSpace(){
     }
     Row(horizontalArrangement = Arrangement.spacedBy(0.dp,alignment = Alignment.CenterHorizontally),
         verticalAlignment = Alignment.Bottom,
-        modifier = Modifier.padding(bottom = 30.dp)){}
+        modifier = Modifier.padding(bottom = 30.dp)){
+        Button(onClick = { if(result==1){result=6}else{result--} },
+            modifier = Modifier.padding(start = 50.dp, end = 50.dp)) {
+            Text(text = "Previous")
+        }
+    }
     }
     }
 
