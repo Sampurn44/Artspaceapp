@@ -100,6 +100,10 @@ fun ArtSpace(){
             modifier = Modifier.padding(start = 50.dp, end = 50.dp)) {
             Text(text = "Previous")
         }
+        Button(onClick = { if(result==6){result=1}else{result++} },
+            modifier = Modifier.padding(20.dp,0.dp,20.dp,0.dp)) {
+            Text(text = "Next")
+        }
     }
     }
     }
