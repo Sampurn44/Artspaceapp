@@ -68,6 +68,7 @@ fun ArtLayout(imageResource: Int,  textResource: String, titleResource: String,m
                 .width(300.dp)
                 .shadow(elevation = 4.dp, shape = RectangleShape)
                 .padding(20.dp)
+    }
         )
         Card(modifier = Modifier.padding(horizontal = 20.dp, vertical = 100.dp)) {
             Column(modifier = Modifier.padding(30.dp))
