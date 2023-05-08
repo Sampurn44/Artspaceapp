@@ -1,2 +1,2 @@
 # Artspaceapp
-using kotlin
+using kotlin in android studio
