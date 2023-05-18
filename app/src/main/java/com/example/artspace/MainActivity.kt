@@ -52,6 +52,63 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+fun ArtSpace(){
+    var result by remember {
+        mutableStateOf(1)
+    }
+    when (result) {
+        1 -> ArtLayout(
+            imageResource = R.drawable.mona_lisa_c_1503_1519, textResource = (stringResource(
+                id = R.string.Mona
+            )), titleResource = (stringResource(id = R.string.vinci)), modifier = Modifier
+        )
+
+        2 -> ArtLayout(
+            imageResource = R.drawable.thekiss, textResource = (stringResource(
+                id = R.string.Thekiss
+            )), titleResource = (stringResource(id = R.string.kiss)), modifier = Modifier
+        )
+
+        3 -> ArtLayout(
+            imageResource = R.drawable.thestarry, textResource = (stringResource(
+                id = R.string.StarryNight
+            )), titleResource = (stringResource(id = R.string.starry)), modifier = Modifier
+        )
+
+
+=======
+        4 -> ArtLayout(
+            imageResource = R.drawable.la_velada__por_rafael, textResource = (stringResource(
+                id = R.string.lavelata
+            )), titleResource = (stringResource(id = R.string.lave)), modifier = Modifier
+        )
+
+        5 -> ArtLayout(
+            imageResource = R.drawable.tryhi, textResource = (stringResource(
+                id = R.string.Fog
+            )), titleResource = (stringResource(id = R.string.foggy)), modifier = Modifier
+        )
+
+        6 -> ArtLayout(
+            imageResource = R.drawable.supperexchange, textResource = (stringResource(
+                id = R.string.last
+            )), titleResource = (stringResource(id = R.string.supper)), modifier = Modifier
+        )
+    }
+    Row(horizontalArrangement = Arrangement.spacedBy(0.dp,alignment = Alignment.CenterHorizontally),
+        verticalAlignment = Alignment.Bottom,
+        modifier = Modifier.padding(bottom = 30.dp)){
+        Button(onClick = { if(result==1){result=6}else{result--} },
+            modifier = Modifier.padding(start = 50.dp, end = 50.dp)) {
+            Text(text = "Previous")
+        }
+        Button(onClick = { if(result==6){result=1}else{result++} },
+            modifier = Modifier.padding(20.dp,0.dp,20.dp,0.dp)) {
+            Text(text = "Next")
+        }
+    }
+    }
+    
 
 @Composable
 fun ArtLayout(imageResource: Int,  textResource: String, titleResource: String,modifier: Modifier){
@@ -85,6 +142,8 @@ fun ArtLayout(imageResource: Int,  textResource: String, titleResource: String,m
     }
 {}
 }
+
+
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
 fun GreetingPreview() {
@@ -92,3 +151,4 @@ fun GreetingPreview() {
         ArtSpace()
     }
 }
+//adding new icon for the app
