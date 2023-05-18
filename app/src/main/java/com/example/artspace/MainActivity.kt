@@ -52,6 +52,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
+@Composable
 fun ArtSpace(){
     var result by remember {
         mutableStateOf(1)
@@ -75,8 +76,6 @@ fun ArtSpace(){
             )), titleResource = (stringResource(id = R.string.starry)), modifier = Modifier
         )
 
-
-=======
         4 -> ArtLayout(
             imageResource = R.drawable.la_velada__por_rafael, textResource = (stringResource(
                 id = R.string.lavelata
@@ -127,20 +126,20 @@ fun ArtLayout(imageResource: Int,  textResource: String, titleResource: String,m
                 .padding(20.dp)
         )
         Card(modifier = Modifier.padding(horizontal = 20.dp, vertical = 100.dp)) {
-            Column(modifier = Modifier.padding(30.dp))
-            Text(
-                text = titleResource,
-                fontSize = 32.sp,
-                fontWeight = FontWeight.Medium,
-            )
-            Text(
-                text = textResource,
-                fontSize = 16.sp,
-                fontWeight = FontWeight.Bold
-            )
+            Column(modifier = Modifier) {
+                Text(
+                    text = titleResource,
+                    fontSize = 32.sp,
+                    fontWeight = FontWeight.Medium,
+                )
+                Text(
+                    text = textResource,
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            }
         }
     }
-{}
 }
 
 
